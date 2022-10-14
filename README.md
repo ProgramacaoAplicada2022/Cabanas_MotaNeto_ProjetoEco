@@ -9,10 +9,10 @@ O Projeto Eco é o codinome para um projeto de aplicação pensada no consumo de
 ### Função: 
 - Cadastrar Usuário
 - Logar
-- Explicar o Consumo
 - Cadastrar Eletrodomésticos 
+- Separar e identificar gastos localizados
 - Caracterizar Consumo e Uso Geral 
 - Calcular gasto basal de Energia
-- Gerar gráficos de consumo 
 - Propor soluções para otimização dos gastos
+- Ensinar sobre economia de energia
 
