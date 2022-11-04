@@ -26,6 +26,7 @@ O esboço do projeto foi feito totalmente pela plataforma Android Studio,prepara
 A partir da exibição das telas,teremos como identificar o funcionamento do nosso aplicativo.
 
 Começando com as telas inicial e de login:
+
 ![1_Tela_Inicial](https://user-images.githubusercontent.com/78933802/200087423-a428232c-b5d9-4bd7-a3ba-b87c505fa3d8.jpeg)
 
 ![2_Tela_de_Login](https://user-images.githubusercontent.com/78933802/200087425-3897d288-cae0-4377-8b5e-3149ccd6eff8.jpeg)
