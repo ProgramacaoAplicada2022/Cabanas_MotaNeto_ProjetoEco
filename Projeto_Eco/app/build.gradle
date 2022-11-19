@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.myapplications22'
+    namespace 'com.example.Projeto_Eco'
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.example.myapplications22"
+        applicationId "com.example.Projeto_Eco"
         minSdk 21
         targetSdk 32
         versionCode 1

@@ -15,7 +15,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.Projeto_Eco.DAO.ContaDAO;
 import com.example.Projeto_Eco.R;
-import com.example.myapplications22.R
 import com.example.Projeto_Eco.Conta.Conta;
 import com.example.Projeto_Eco.Adapter.ListaContasAdapter;
 
