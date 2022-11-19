@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#907A7A7A"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_conta_nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:text="Aparelho" />
+    <TextView
+        android:id="@+id/item_potencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="20sp"
+        tools:text="Potência do Aparelho"/>
+
+    <TextView
+        android:id="@+id/item_horas_de_uso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="20sp"
+        tools:text="Horas de Uso Diário"/>
+    <TextView
+        android:id="@+id/item_preco_kwh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="20sp"
+        tools:text="Preço do kWh"/>
+    <TextView
+        android:id="@+id/item_consumo_mensal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="20sp"
+        tools:text="Consumo Mensal em kWh"/>
+    <TextView
+        android:id="@+id/item_preco_consumo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="20sp"
+        tools:text="Valor total mensal em reais"/>
+
+
+
+
+</LinearLayout>

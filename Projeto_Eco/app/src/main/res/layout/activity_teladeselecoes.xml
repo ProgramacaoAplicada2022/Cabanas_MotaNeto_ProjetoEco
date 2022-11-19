@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background5"
+    tools:context=".teladeselecoes">
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/imageFilterView9"
+        android:layout_width="384dp"
+        android:layout_height="243dp"
+        android:layout_marginBottom="60dp"
+        android:src="@drawable/clique3"
+        app:layout_constraintBottom_toTopOf="@+id/botaocontas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.74"
+        app:layout_constraintStart_toEndOf="@+id/textView" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/imageFilterView31"
+        android:layout_width="81dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="63dp"
+        android:src="@drawable/calc"
+        app:layout_constraintBottom_toTopOf="@+id/botaoteoria"
+        app:layout_constraintEnd_toStartOf="@+id/botaocontas"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/imageFilterView31"
+        android:layout_width="96dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="255dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="256dp"
+        android:src="@drawable/book"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/botaoteoria"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/botaocontas"
+        android:layout_width="229dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="132dp"
+        android:text="Calcule os seus gastos"
+        app:backgroundTint="@color/verdeescuro"
+        app:layout_constraintBottom_toBottomOf="@+id/imageFilterView31"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="-19dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/botaoteoria"
+        android:layout_width="234dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="4dp"
+        android:text="Teoria de energia"
+        app:layout_constraintBottom_toBottomOf="@+id/imageFilterView31"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageFilterView31" />
+
+    <Button
+        android:id="@+id/botaoquiz"
+        android:layout_width="232dp"
+        android:layout_height="59dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="105dp"
+        android:text="Quiz energético"
+        app:backgroundTint="@color/azulclaro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.979"
+        app:layout_constraintStart_toEndOf="@+id/botaovoltar"
+        app:layout_constraintTop_toBottomOf="@+id/botaoteoria"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="152dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Tudo sobre Energia "
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Em um clique"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/black"
+        android:focusable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <Button
+        android:id="@+id/botaovoltar"
+        android:layout_width="54dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="124dp"
+        android:background="@drawable/question"
+        app:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageFilterView31"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="49dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/imageFilterView9"
+        app:layout_constraintGuide_end="469dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
