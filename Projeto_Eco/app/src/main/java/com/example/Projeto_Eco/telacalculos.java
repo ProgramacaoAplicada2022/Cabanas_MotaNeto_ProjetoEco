@@ -113,8 +113,6 @@ public class telacalculos extends AppCompatActivity {
         conta.setPreco_consumo(Double.toString(res2));
         conta.setConsumo_mensal(Double.toString(res));
 
-        //  Refeicao refeicaoCriada = new Refeicao(nome, ptn, carbo, hortA, hortB);
-        //para so atualizar return new Refeicao(nome, ptn, carbo, hortA, hortB);
     }
 
     private void inicializacaoDosCampos() {

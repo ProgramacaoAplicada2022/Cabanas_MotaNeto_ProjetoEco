@@ -10,13 +10,13 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.Projeto_Eco.DAO.ContaDAO;
-import com.example.Projeto_Eco.R;
 import com.example.Projeto_Eco.Conta.Conta;
 import com.example.Projeto_Eco.Adapter.ListaContasAdapter;
 
@@ -25,6 +25,7 @@ public class teladecontas extends AppCompatActivity {
     private Button botaovoltar2;
     private Button botaovoltar3;
     private final ContaDAO dao = new ContaDAO();
+    private double ValordaConta;
     private ListaContasAdapter adapter;
 
     @Override
@@ -57,6 +58,8 @@ public class teladecontas extends AppCompatActivity {
             }
         });
 
+        //TextView valordaConta = (TextView) findViewById(R.id.ValorTotal);
+        //ValordaConta = adapter.ValorTotal();
     }
 
     public void openteladecalculos(){
@@ -71,7 +74,7 @@ public class teladecontas extends AppCompatActivity {
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         super.onCreateContextMenu(menu, v, menuInfo);
-        getMenuInflater().inflate(R.menu.activity_lista_de_refeicoes_menu, menu); //menu.add("Remover");
+        getMenuInflater().inflate(R.menu.activity_lista_de_contas_menu, menu); //menu.add("Remover");
     }
 
     @Override
@@ -96,6 +99,7 @@ public class teladecontas extends AppCompatActivity {
         adapter.remove(conta);
     }
 
+
     @Override
     protected void onResume() {
         super.onResume();
@@ -105,6 +109,8 @@ public class teladecontas extends AppCompatActivity {
     private void atualizaContas() {
         adapter.clear();
         adapter.addAll(dao.todos());
+        TextView valordaConta = (TextView) findViewById(R.id.ValorTotal);
+        valordaConta.setText(String.valueOf(adapter.ValorTotal()));
     }
 
     private void configuraListaContas() {
@@ -114,14 +120,14 @@ public class teladecontas extends AppCompatActivity {
         registerForContextMenu(listaDeContas); //indica que a lista tem um registro de context menu
     }
 
-    private void configuraAdapter(ListView listaDeRefeicoes) {
+    private void configuraAdapter(ListView listaDeContas) {
 
         adapter = new ListaContasAdapter(this);
-        listaDeRefeicoes.setAdapter(adapter);
+        listaDeContas.setAdapter(adapter);
     }
 
-    private void configuraListenerDeClickPorItem(ListView listaDeRefeicoes) {
-        listaDeRefeicoes.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+    private void configuraListenerDeClickPorItem(ListView listaDeContas) {
+        listaDeContas.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int posicao, long id) {
                 Conta contaEscolhida = (Conta) adapterView.getItemAtPosition(posicao);
