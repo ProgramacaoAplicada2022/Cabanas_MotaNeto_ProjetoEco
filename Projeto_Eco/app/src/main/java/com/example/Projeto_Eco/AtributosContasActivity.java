@@ -12,7 +12,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
 
-import com.example.Projeto_Eco.R;
 import com.example.Projeto_Eco.Conta.Conta;
 import com.example.Projeto_Eco.DAO.ContaDAO;
 
@@ -38,7 +37,7 @@ public class AtributosContasActivity extends AppCompatActivity{
     //Ver como mudar esse menu
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.activity_alimentos_refeicao_menu, menu);
+        getMenuInflater().inflate(R.menu.activity_calculos_conta_menu, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -47,7 +46,7 @@ public class AtributosContasActivity extends AppCompatActivity{
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int itemId = item.getItemId();
-        if (itemId == R.id.activity_alimentos_refeicao_menu_salvar) {
+        if (itemId == R.id.activity_calculos_conta_menu_salvar) {
             finalizaFormulario();
         }
         return super.onOptionsItemSelected(item);

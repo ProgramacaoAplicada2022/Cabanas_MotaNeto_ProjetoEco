@@ -16,7 +16,6 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.Projeto_Eco.DAO.ContaDAO;
-import com.example.Projeto_Eco.R;
 import com.example.Projeto_Eco.Conta.Conta;
 import com.example.Projeto_Eco.Adapter.ListaContasAdapter;
 
@@ -71,7 +70,7 @@ public class teladecontas extends AppCompatActivity {
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         super.onCreateContextMenu(menu, v, menuInfo);
-        getMenuInflater().inflate(R.menu.activity_lista_de_refeicoes_menu, menu); //menu.add("Remover");
+        getMenuInflater().inflate(R.menu.activity_lista_de_contas_menu, menu); //menu.add("Remover");
     }
 
     @Override
