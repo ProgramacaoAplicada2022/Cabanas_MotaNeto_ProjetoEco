@@ -45,29 +45,26 @@ public class ListaContasAdapter extends BaseAdapter {
         nome.setText(contaCriada.getNome());
 
         TextView potencia = viewCriada.findViewById(R.id.item_potencia);
-        potencia.setText("Consumo Mensal: R$" +contaCriada.getPotencia());
+        potencia.setText("Consumo Mensal: R$ " +contaCriada.getPotencia());
 
         TextView horas_de_uso = viewCriada.findViewById(R.id.item_horas_de_uso);
-        horas_de_uso.setText(contaCriada.getHoras_uso() + "horas de uso");
-
-        TextView preco_kwh = viewCriada.findViewById(R.id.item_preco_kwh);
-        preco_kwh.setText(contaCriada.getPreco_kWh());
+        horas_de_uso.setText(contaCriada.getHoras_uso() + " horas de uso diário");
 
         TextView consumo_mensal = viewCriada.findViewById(R.id.item_consumo_mensal);
         consumo_mensal.setText(contaCriada.getConsumo_mensal() + " W");
+
 
         TextView preco_consumo = viewCriada.findViewById(R.id.item_preco_consumo);
         preco_consumo.setText("R$ " + contaCriada.getPreco_consumo());
         return viewCriada;
     }
 
-    public double ValorTotal(){
-        double valortotal = 0;
+    public float ValorTotal(){
+        float valortotal = 0;
+
         for(int i = 0; i < contas.size(); i++)
-        {
-            //Conta contatemp = contas.get(i);
-            valortotal = valortotal + Double.parseDouble(contas.get(i).getPreco_consumo());
-        }
+            valortotal = valortotal + Float.parseFloat(contas.get(i).getPreco_consumo());
+
         return valortotal;
     }
 

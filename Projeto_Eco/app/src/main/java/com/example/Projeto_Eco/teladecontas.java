@@ -34,7 +34,6 @@ public class teladecontas extends AppCompatActivity {
 
         setContentView(R.layout.activity_teladecontas);
 
-        //configuraFabNovaConta();
         configuraListaContas();
 
         botaocalculadora = findViewById(R.id.botaocalculadora);
@@ -57,9 +56,6 @@ public class teladecontas extends AppCompatActivity {
             public void onClick(View view) {openteladecalculos();
             }
         });
-
-        //TextView valordaConta = (TextView) findViewById(R.id.ValorTotal);
-        //ValordaConta = adapter.ValorTotal();
     }
 
     public void openteladecalculos(){
@@ -114,10 +110,10 @@ public class teladecontas extends AppCompatActivity {
     }
 
     private void configuraListaContas() {
-        ListView listaDeContas = findViewById(R.id.activity_lista_de_contas_listview); //usar listadapter para implementacoes mais complexas
-        configuraAdapter(listaDeContas); //preciso ir adicionando aq no codigo
+        ListView listaDeContas = findViewById(R.id.activity_lista_de_contas_listview);
+        configuraAdapter(listaDeContas);
         configuraListenerDeClickPorItem(listaDeContas);
-        registerForContextMenu(listaDeContas); //indica que a lista tem um registro de context menu
+        registerForContextMenu(listaDeContas);
     }
 
     private void configuraAdapter(ListView listaDeContas) {
@@ -131,14 +127,12 @@ public class teladecontas extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int posicao, long id) {
                 Conta contaEscolhida = (Conta) adapterView.getItemAtPosition(posicao);
-                // Log.i("refeicao", "" + refeicaoEscolhida);
                 abreFormularioModoEditaConta(contaEscolhida);
             }
         });
     }
 
     private void abreFormularioModoEditaConta(Conta conta) {
-        //Intent vaiParaAlimentosRefeicaoActivity = new Intent(ActivityListadeContas.this, AlimentosRefeicaoActivity.class);
         Intent vaiParaAtributosContasActivity = new Intent(teladecontas.this, telacalculos.class);
         vaiParaAtributosContasActivity.putExtra(CHAVE_CONTA, conta);
         startActivity(vaiParaAtributosContasActivity);

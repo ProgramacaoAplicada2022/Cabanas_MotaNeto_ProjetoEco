@@ -16,7 +16,7 @@ import com.example.Projeto_Eco.Conta.Conta;
 import com.example.Projeto_Eco.DAO.ContaDAO;
 
 public class telacalculos extends AppCompatActivity {
-    double num1, num2,num3, res,res2;
+    float num1, num2,num3, res,res2;
     private Button botaovoltar3;
     private EditText campoNome;
     private EditText campoPrecoKWH;
@@ -50,19 +50,14 @@ public class telacalculos extends AppCompatActivity {
 
         TextView mensal = (TextView) findViewById(R.id.mensal);
 
-        //EditText Poder = (EditText) findViewById(R.id.Poder);
-        //EditText Horas = (EditText) findViewById(R.id.Horas);
-        //EditText Preço = (EditText) findViewById(R.id.Preço);
-        //EditText Nome = (EditText) findViewById(R.id.Nome);
-
         multiplicar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                num1 = Double.parseDouble(campoPotencia.getText().toString());
-                num2 = Double.parseDouble(campoHorasDeUso.getText().toString());
-                num3 = Double.parseDouble(campoPrecoKWH.getText().toString());
-                res = num1 * num2*0.001;
-                res2 = res*num3*30*num2;
+                num1 = Float.parseFloat(campoPotencia.getText().toString());
+                num2 = Float.parseFloat(campoHorasDeUso.getText().toString());
+                num3 = Float.parseFloat(campoPrecoKWH.getText().toString());
+                res = num1 * num2/1000;
+                res2 = res * num3 * 30;
                 Kwh.setText(String.valueOf(res));
                 mensal.setText(String.valueOf(res2));
             }
@@ -75,8 +70,6 @@ public class telacalculos extends AppCompatActivity {
         campoPrecoKWH.setText(conta.getPreco_kWh());
         campoPotencia.setText(conta.getPotencia());
         campoHorasDeUso.setText(conta.getHoras_uso());
-
-        //Ver como preenche com as contas feitas
     }
 
     private void finalizaFormulario() {
@@ -120,10 +113,6 @@ public class telacalculos extends AppCompatActivity {
         campoHorasDeUso = findViewById(R.id.Horas);
         campoPotencia = findViewById(R.id.Poder);
         campoPrecoKWH = findViewById(R.id.Preço);
-        //EditText Poder = (EditText) findViewById(R.id.Poder);
-        //EditText Horas = (EditText) findViewById(R.id.Horas);
-        //EditText Preço = (EditText) findViewById(R.id.Preço);
-        //EditText Nome = (EditText) findViewById(R.id.Nome);
     }
 
     public void openteladecontas(){
@@ -133,7 +122,7 @@ public class telacalculos extends AppCompatActivity {
 
         private void salva(Conta conta) {
         dao.salva(conta);
-        openteladecontas(); //retorna ´pra anterior
+        openteladecontas();
     }
     private void configuraBotaoSalvar() {
         Button botaoSalvar = findViewById(R.id.botaoSalvar);
