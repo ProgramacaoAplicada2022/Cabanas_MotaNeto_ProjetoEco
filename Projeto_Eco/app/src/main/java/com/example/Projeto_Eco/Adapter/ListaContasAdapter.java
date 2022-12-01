@@ -61,6 +61,16 @@ public class ListaContasAdapter extends BaseAdapter {
         return viewCriada;
     }
 
+    public double ValorTotal(){
+        double valortotal = 0;
+        for(int i = 0; i < contas.size(); i++)
+        {
+            //Conta contatemp = contas.get(i);
+            valortotal = valortotal + Double.parseDouble(contas.get(i).getPreco_consumo());
+        }
+        return valortotal;
+    }
+
     public void clear() {
         contas.clear();
     }
@@ -71,4 +81,6 @@ public class ListaContasAdapter extends BaseAdapter {
 
     public void remove(Conta conta) {contas.remove(conta);
     }
+
+
 }

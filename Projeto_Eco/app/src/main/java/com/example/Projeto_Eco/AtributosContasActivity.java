@@ -34,15 +34,12 @@ public class AtributosContasActivity extends AppCompatActivity{
     }
 
 
-    //Ver como mudar esse menu
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.activity_calculos_conta_menu, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
-
-    //Ver como mudar esse menu salvar
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int itemId = item.getItemId();
@@ -56,7 +53,7 @@ public class AtributosContasActivity extends AppCompatActivity{
         Intent dados = getIntent();
         if (dados.hasExtra(CHAVE_CONTA)) {
             conta = (Conta) dados.getSerializableExtra(CHAVE_CONTA);
-            preencheCampos(); //preenche os campos com o que ja foi inserido
+            preencheCampos();
         } else{
             conta = new Conta();
         }
@@ -68,18 +65,8 @@ public class AtributosContasActivity extends AppCompatActivity{
         campoPotencia.setText(conta.getPotencia());
         campoHorasDeUso.setText(conta.getHoras_uso());
 
-        //Ver como preenche com as contas feitas
     }
 
-    //    private void configuraBotaoSalvar() {
-//        Button botaoSalvar = findViewById(R.id.activity_calculadora_botao_salvar);
-//        botaoSalvar.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                finalizaFormulario();
-//            }
-//        });
-//    }
 
     private void finalizaFormulario() {
         preencheConta();
@@ -92,15 +79,7 @@ public class AtributosContasActivity extends AppCompatActivity{
     }
 
     private void inicializacaoDosCampos() {
-        //campoNome = findViewById(R.id.activity_formulario_refeicao_nome);
-        //campoHorasDeUso = findViewById(R.id.activity_formulario_refeicao_hora);
-        //campoPotencia = findViewById(R.id.activity_formulario_refeicao_ptn);
-       // campoPrecoKWH = findViewById(R.id.activity_formulario_refeicao_carb);
     }
-//    private void salva(Refeicao refeicao) {
-//        dao.salva(refeicao);
-//        finish(); //retorna ´pra anterior
-//    }
 
     private void preencheConta() {
         String nome = campoNome.getText().toString();
@@ -112,8 +91,6 @@ public class AtributosContasActivity extends AppCompatActivity{
         conta.setPotencia(potencia);
         conta.setPreco_kWh(precoKWH);
 
-        //  Refeicao refeicaoCriada = new Refeicao(nome, ptn, carbo, hortA, hortB);
-        //para so atualizar return new Refeicao(nome, ptn, carbo, hortA, hortB);
     }
 
 }
