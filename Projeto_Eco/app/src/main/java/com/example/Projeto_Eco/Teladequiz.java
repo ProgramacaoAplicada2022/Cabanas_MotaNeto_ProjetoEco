@@ -82,26 +82,24 @@ if(click.getId()==R.id.responder){
     void terminarquiz(){
         String mensagem="";
         if(score == 0){
-            mensagem = "ruim";
+            mensagem = "Você é consciente com os gastos.O meio ambiente e o Eco agradecem";
 
         }
-        if(score == totalquestoes/4){
-            mensagem = "  Bom";
+        if(score == totalquestoes/3){
+            mensagem = "Você é consciente em quase todos os quesitos,continue assim";
 
         }
-        if(score == totalquestoes/2){
-            mensagem = " OTIMO!";
+        if(score == totalquestoes*2/3){
+            mensagem = " Pode melhorar através da nossa aba de teoria,vem com a gente!";
 
         }
-        if(score > totalquestoes*3/4){
-            mensagem = " MUITO OTIMO!";
+        if(score == totalquestoes){
+            mensagem = "A consciência de gastos foi ruim,vem aprender com a teoria da Eco!";
         }
-        if(score > totalquestoes){
-            mensagem = " MUITO BOM OTIMO MESMO!";
-        }
+
         new AlertDialog.Builder(this)
                 .setTitle(mensagem)
-                .setMessage("Seu ponto "+ score+" de "+totalquestoes)
+                .setMessage("Escolhas que geram gastos: "+ score+" de "+totalquestoes)
                 .setPositiveButton("Restart",((dialogInterface, i) -> restart()))
                 .setNeutralButton("Teoria",((dialogInterface, i) -> teoria()))
                 .setCancelable(false)
@@ -113,7 +111,7 @@ atualquestao=0;
 novaquestao();;
     }
     void teoria(){
-        Intent intent = new Intent(this,teladeteoria.class);
+        Intent intent = new Intent(this,Abadateoria.class);
         startActivity(intent);
     }
 }

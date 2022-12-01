@@ -50,7 +50,7 @@ public class teladeselecoes extends AppCompatActivity {
         startActivity(intent);
     }
     public void openteladeteoria(){
-        Intent intent = new Intent(this,teladeteoria.class);
+        Intent intent = new Intent(this,Abadateoria.class);
         startActivity(intent);
     }
     public void openteladelogin(){
