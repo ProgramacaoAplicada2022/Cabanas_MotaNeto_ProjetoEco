@@ -15,16 +15,34 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="-68dp" />
 
-    <Button
-        android:id="@+id/botaocalculadora"
-        android:layout_width="113dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="96dp"
-        android:text="Conta1"
-        app:backgroundTint="@color/black"
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="none"
+        android:text="Preço total (R$): "
+        android:textColor="#000000"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.681" />
+
+    <TextView
+        android:id="@+id/ValorTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.678" />
 
     <androidx.constraintlayout.utils.widget.ImageFilterView
         android:id="@+id/imageFilterView"
@@ -69,16 +87,16 @@
     <ListView
         android:id="@+id/activity_lista_de_contas_listview"
         android:layout_width="362dp"
-        android:layout_height="465dp"
+        android:layout_height="330dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.421" />
+        app:layout_constraintVertical_bias="0.33" />
 
     <Button
-        android:id="@+id/botaovoltar5"
+        android:id="@+id/botaocalculadora"
         android:layout_width="91dp"
         android:layout_height="77dp"
         android:layout_marginBottom="56dp"
