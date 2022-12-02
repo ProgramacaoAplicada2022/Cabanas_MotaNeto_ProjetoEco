@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     public void openlogin(){
-        Intent intent = new Intent(this,login.class);
+        Intent intent = new Intent(this,teladeselecoes.class);
         startActivity(intent);
     }
 

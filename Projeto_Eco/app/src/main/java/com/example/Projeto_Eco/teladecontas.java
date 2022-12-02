@@ -60,7 +60,7 @@ public class teladecontas extends AppCompatActivity {
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         super.onCreateContextMenu(menu, v, menuInfo);
-        getMenuInflater().inflate(R.menu.activity_lista_de_contas_menu, menu); //menu.add("Remover");
+        getMenuInflater().inflate(R.menu.activity_lista_de_contas_menu, menu);
     }
 
     @Override
@@ -127,7 +127,5 @@ public class teladecontas extends AppCompatActivity {
         vaiParaAtributosContasActivity.putExtra(CHAVE_CONTA, conta);
         startActivity(vaiParaAtributosContasActivity);
     }
-
-
 
 }

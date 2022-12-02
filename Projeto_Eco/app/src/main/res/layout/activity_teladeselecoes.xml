@@ -166,5 +166,18 @@
         app:layout_constraintGuide_end="469dp"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <Button
+        android:id="@+id/botaovoltartelainicial"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="45dp"
+        android:background="@drawable/back"
+        android:textColorHighlight="#771919"
+        app:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

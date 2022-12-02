@@ -27,9 +27,7 @@ public class AtributosContasActivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_telacalculos);
-        inicializacaoDosCampos(); //onde entra cada atributo
-        //configuraBotaoSalvar();
+        inicializacaoDosCampos();
         carregaConta();
     }
 

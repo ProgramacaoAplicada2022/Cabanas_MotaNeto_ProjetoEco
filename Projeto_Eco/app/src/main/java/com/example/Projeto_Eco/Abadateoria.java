@@ -17,8 +17,8 @@ public class Abadateoria extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abadateoria);
         botaovoltar7 = findViewById(R.id.botaovoltar7);
-        consumoButton = findViewById(R.id.botaoproximo2);
-        lampadaButton = findViewById(R.id.botaoproximo);
+        consumoButton = findViewById(R.id.botaoproximo);
+        lampadaButton = findViewById(R.id.botaoproximo2);
         gelButton = findViewById(R.id.botaoproximo3);
       gelButton.setOnClickListener(new View.OnClickListener() {
             @Override

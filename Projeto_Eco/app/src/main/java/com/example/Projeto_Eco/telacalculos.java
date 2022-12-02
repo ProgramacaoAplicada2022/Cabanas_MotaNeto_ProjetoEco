@@ -72,23 +72,11 @@ public class telacalculos extends AppCompatActivity {
         campoHorasDeUso.setText(conta.getHoras_uso());
     }
 
-    private void finalizaFormulario() {
-        preencheConta();
-        if (conta.temIdValido()) {
-            dao.edita(conta);
-            Toast.makeText(this, "Salvo!", Toast.LENGTH_SHORT).show();
-        } else {
-            dao.salva(conta);
-            Toast.makeText(this, "Salvo!", Toast.LENGTH_SHORT).show();
-        }
-        openteladecontas();
-    }
-
     private void carregaConta() {
         Intent dados = getIntent();
         if (dados.hasExtra(CHAVE_CONTA)) {
             conta = (Conta) dados.getSerializableExtra(CHAVE_CONTA);
-            preencheCampos(); //preenche os campos com o que ja foi inserido
+            preencheCampos();
         } else{
             conta = new Conta();
         }
@@ -120,10 +108,6 @@ public class telacalculos extends AppCompatActivity {
         startActivity(intent);
     }
 
-        private void salva(Conta conta) {
-        dao.salva(conta);
-        openteladecontas();
-    }
     private void configuraBotaoSalvar() {
         Button botaoSalvar = findViewById(R.id.botaoSalvar);
         botaoSalvar.setOnClickListener(new View.OnClickListener() {
@@ -132,6 +116,18 @@ public class telacalculos extends AppCompatActivity {
                 finalizaFormulario();
             }
         });
+    }
+
+    private void finalizaFormulario() {
+        preencheConta();
+        if (conta.temIdValido()) {
+            dao.edita(conta);
+            Toast.makeText(this, "Salvo!", Toast.LENGTH_SHORT).show();
+        } else {
+            dao.salva(conta);
+            Toast.makeText(this, "Salvo!", Toast.LENGTH_SHORT).show();
+        }
+        openteladecontas();
     }
 
 }

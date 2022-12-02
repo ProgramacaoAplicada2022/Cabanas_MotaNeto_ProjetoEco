@@ -25,15 +25,13 @@ public class ActivityListadeContas extends AppCompatActivity{
 
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_teladecontas);  //colocando o arq estatico q criamos como view dessa activity
-        //configuraFabNovaConta();
         configuraListaContas();
     }
 
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         super.onCreateContextMenu(menu, v, menuInfo);
-        getMenuInflater().inflate(R.menu.activity_lista_de_contas_menu, menu); //menu.add("Remover");
+        getMenuInflater().inflate(R.menu.activity_lista_de_contas_menu, menu);
     }
 
     @Override
@@ -47,23 +45,10 @@ public class ActivityListadeContas extends AppCompatActivity{
         return super.onContextItemSelected(item);
     }
 
-    //private void configuraFabNovaConta() {
-        //FloatingActionButton nova_conta = findViewById(R.id.nova_conta);
-       // nova_conta.setOnClickListener(new View.OnClickListener() {
-            //@Override
-           // public void onClick(View view) {
-               // openteladecalculos();
-           // }
-      //  });
-    //}
-
     //Mudar para adicionar conta
     public void openteladecalculos(){
         Intent intent = new Intent(this,telacalculos.class);
         startActivity(intent);
-    }
-    private void abreFormularioModoInsereRefeicao() {
-       // startActivity(new Intent(this, AlimentosRefeicaoActivity.class));
     }
 
     @Override
@@ -78,10 +63,10 @@ public class ActivityListadeContas extends AppCompatActivity{
     }
 
     private void configuraListaContas() {
-        ListView listaDeContas= findViewById(R.id.activity_lista_de_contas_listview); //usar listadapter para implementacoes mais complexas
-        configuraAdapter(listaDeContas); //preciso ir adicionando aq no codigo
+        ListView listaDeContas= findViewById(R.id.activity_lista_de_contas_listview);
+        configuraAdapter(listaDeContas);
         configuraListenerDeClickPorItem(listaDeContas);
-        registerForContextMenu(listaDeContas); //indica que a lista tem um registro de context menu
+        registerForContextMenu(listaDeContas);
     }
 
     private void remove(Conta conta) {
@@ -89,22 +74,20 @@ public class ActivityListadeContas extends AppCompatActivity{
         adapter.remove(conta);
     }
 
-    private void configuraListenerDeClickPorItem(ListView listaDeRefeicoes) {
-        listaDeRefeicoes.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+    private void configuraListenerDeClickPorItem(ListView listaDeContas) {
+        listaDeContas.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int posicao, long id) {
                 Conta contaEscolhida = (Conta) adapterView.getItemAtPosition(posicao);
-                // Log.i("refeicao", "" + refeicaoEscolhida);
-                abreFormularioModoEditaRefeicao(contaEscolhida);
+                abreFormularioModoEditaConta(contaEscolhida);
             }
         });
     }
 
-    private void abreFormularioModoEditaRefeicao(Conta conta) {
-        //Intent vaiParaAlimentosRefeicaoActivity = new Intent(ActivityListadeContas.this, AlimentosRefeicaoActivity.class);
-        Intent vaiParaAlimentosRefeicaoActivity = new Intent(ActivityListadeContas.this, telacalculos.class);
-        vaiParaAlimentosRefeicaoActivity.putExtra(CHAVE_CONTA, conta);
-        startActivity(vaiParaAlimentosRefeicaoActivity);
+    private void abreFormularioModoEditaConta(Conta conta) {
+        Intent vaiParaCalculosContaActivity = new Intent(ActivityListadeContas.this, telacalculos.class);
+        vaiParaCalculosContaActivity.putExtra(CHAVE_CONTA, conta);
+        startActivity(vaiParaCalculosContaActivity);
     }
 
     private void configuraAdapter(ListView listaDeContas) {

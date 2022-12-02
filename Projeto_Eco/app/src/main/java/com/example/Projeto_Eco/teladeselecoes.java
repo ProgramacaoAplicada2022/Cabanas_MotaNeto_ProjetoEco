@@ -12,6 +12,7 @@ public class teladeselecoes extends AppCompatActivity {
     private Button botaoquiz;
     private Button botaoteoria;
     private Button botaovoltar;
+    private Button botaovoltartelainicial;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +21,7 @@ public class teladeselecoes extends AppCompatActivity {
         botaoquiz=findViewById(R.id.botaoquiz);
         botaoteoria=findViewById(R.id.botaoteoria);
         botaovoltar=findViewById(R.id.botaovoltar);
+        botaovoltartelainicial = findViewById(R.id.botaovoltartelainicial);
         botaovoltar .setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {openteladelogin();
@@ -40,6 +42,11 @@ public class teladeselecoes extends AppCompatActivity {
             public void onClick(View view) {openteladeteoria();
             }
         });
+        botaovoltartelainicial.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {opentelainicial();
+            }
+        });
     }
     public void openteladecontas(){
         Intent intent = new Intent(this,teladecontas.class);
@@ -55,6 +62,10 @@ public class teladeselecoes extends AppCompatActivity {
     }
     public void openteladelogin(){
         Intent intent = new Intent(this,login.class);
+        startActivity(intent);
+    }
+    public void opentelainicial(){
+        Intent intent = new Intent(this,MainActivity.class);
         startActivity(intent);
     }
 
