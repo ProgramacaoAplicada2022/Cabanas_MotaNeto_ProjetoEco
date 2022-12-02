@@ -40,33 +40,56 @@ Após isso, deve ser executado em um aparelho virtual (Os Google Pixels são os 
 
 
 ### Esboço:
-O esboço do projeto foi feito totalmente pela plataforma Android Studio,preparando o layout para a versão funcional do todo.
 A partir da exibição das telas,teremos como identificar o funcionamento do nosso aplicativo.
 
-Começando com as telas inicial e de login:
+Começando com a tela inicial:
 
-![1_Tela_Inicial](https://user-images.githubusercontent.com/78933802/200087423-a428232c-b5d9-4bd7-a3ba-b87c505fa3d8.jpeg)
+<img src ="https://user-images.githubusercontent.com/115590469/205397574-308d0907-1949-479d-9860-889846327524.jpeg" width="250px"/>
 
-![2_Tela_de_Login](https://user-images.githubusercontent.com/78933802/200087425-3897d288-cae0-4377-8b5e-3149ccd6eff8.jpeg)
+O usuário poderá,então,escolher as seguintes opções na tela de menu:
 
-Após logar, o usuário poderá escolher as seguintes opções na tela de menu:
+<img src="https://user-images.githubusercontent.com/115590469/205396499-a9d0fb2f-4923-4133-8e1c-3b9ab16be536.jpeg" width="250px"/>
 
-![4_Menu](https://user-images.githubusercontent.com/78933802/200087428-db0a7dba-6ebb-4f2d-a1a7-c9b746336fda.jpeg)
+No espaço da cálculo de gastos,é possível escolher criar uma conta nova,para uma especificação
+de gasto energético de um aparelho de interesse.
 
-O quiz energético testa o conhecimento do usuário e redireciona para a área de teoria, caso necessário.
+<img src="https://user-images.githubusercontent.com/115590469/205398126-444f94ce-6ad0-406b-bd6e-8423e74bc60e.jpeg" width="250px"/>
 
-![5_Quiz](https://user-images.githubusercontent.com/78933802/200087430-8f4bee47-dccc-462b-b61b-8b01cf37168f.jpeg)
+Cadastramos nome e aparelho,podendo visualizar gastos e salvá-lo:
 
-No espaço conscientizar,é possível escolher criar uma conta nova,para uma especificação de gasto energético de um aparelho de interesse. 
-Podemos ver que é possível escolher uma conta antiga,acessando os dados de um antigo aparelho.
+<img src="https://user-images.githubusercontent.com/115590469/205398351-a9ce4e26-9d16-4ca8-9f29-6d5a6aed5f31.jpeg" width="250px"/>
 
-![6_Calculadora_1](https://user-images.githubusercontent.com/78933802/200087432-1fa0bd0f-bb0f-4b2d-8635-9b0de5e1f44d.jpeg)
+O aparelho salvo possui uma conta salva que pode ser acessada e removida.
 
-Na tela Calculadora,o usuário insere os dados de potência,uso diário e preço da eletricidade,denotando o consumo médio de um aparelho específico.
-E então, recebe como informação a projeção de custo ao longo do tempo,conscientizando-se do valor da conta de luz por uso.Podendo salvar depois como nova conta 
+O cadastro de novos aparelhos aparece em forma de lista com o gasto total sendo mostrado:
 
-![7_Calculadora_2](https://user-images.githubusercontent.com/78933802/200087433-d324a6c7-baad-4136-ad83-c1ed378a8a8b.jpeg)
+<img src="https://user-images.githubusercontent.com/115590469/205398571-0d069faa-e79f-456b-8732-6bd00eb2bce3.jpeg" width="250px"/>
 
-A Teoria de consumo tem como objetivo incentivar o aprendizado sobre economia de energia.
 
-![8_Teoria_Consumo](https://user-images.githubusercontent.com/78933802/200087437-ca830743-607a-4ea3-b6fd-0f91f5bb5405.jpeg)
+Agora na aba de quiz energético,teremos perguntas de hábitos e gastos:
+
+<img src="https://user-images.githubusercontent.com/115590469/205398698-10728b21-448f-4300-865d-99065abe3a69.jpeg" width="250px"/>
+
+Ao final,o resultado baseado nas respostas e o acesso ao aprendizado direto à aba de teoria:
+
+<img src="https://user-images.githubusercontent.com/115590469/205399035-3f26c634-407f-428c-820c-6273e702d472.jpeg" width="250px"/>
+
+Na Teoria,temos gifs para cada opção de tela teórica:
+
+<img src="https://user-images.githubusercontent.com/115590469/205399195-b1fbe81c-1a67-402a-b048-b12d60e9f501.jpeg" width="250px"/>
+
+A tela de Lampada vs Led:
+
+<img src="https://user-images.githubusercontent.com/115590469/205399475-1e180295-d843-4625-ba26-60f6029578ee.jpeg" width="220px"/>
+
+A tela de consumo de água:
+
+<img src="https://user-images.githubusercontent.com/115590469/205399572-d42651b2-267a-4923-a2ce-8f2aa82cad00.jpeg" width="220px"/>
+
+A tela de gastos com geladeira:
+
+<img src="https://user-images.githubusercontent.com/115590469/205399647-336698c4-722a-4c3a-8a3d-1b9d229471ff.jpeg" width="220px"/>
+
+
+
+ 
