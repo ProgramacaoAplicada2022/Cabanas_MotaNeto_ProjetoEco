@@ -45,17 +45,17 @@ public class ListaContasAdapter extends BaseAdapter {
         nome.setText(contaCriada.getNome());
 
         TextView potencia = viewCriada.findViewById(R.id.item_potencia);
-        potencia.setText("Consumo Mensal: R$ " +contaCriada.getPotencia());
+        potencia.setText(contaCriada.getPotencia() + "W de Potência");
 
         TextView horas_de_uso = viewCriada.findViewById(R.id.item_horas_de_uso);
         horas_de_uso.setText(contaCriada.getHoras_uso() + " horas de uso diário");
 
         TextView consumo_mensal = viewCriada.findViewById(R.id.item_consumo_mensal);
-        consumo_mensal.setText(contaCriada.getConsumo_mensal() + " W");
+        consumo_mensal.setText(contaCriada.getConsumo_mensal() + " kWh por dia");
 
 
         TextView preco_consumo = viewCriada.findViewById(R.id.item_preco_consumo);
-        preco_consumo.setText("R$ " + contaCriada.getPreco_consumo());
+        preco_consumo.setText("Consumo Mensal: R$ " + contaCriada.getPreco_consumo());
         return viewCriada;
     }
 
