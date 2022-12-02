@@ -20,9 +20,11 @@ O Projeto Eco é o codinome para um projeto de aplicação pensada no consumo de
 
 #### Para testar apenas o aplicativo:
 
-Para a simples execução aplicativo em um dispositivo android basta realizar o download do arquivo .apk.
+Para a simples execução aplicativo em um dispositivo android basta realizar o download do arquivo .apk, na pasta /Aplicativo APK.
 A instalação deve ser autorizada nas configurações do dispositivo e assim que executada o aplicativo estará em condições de uso.
 Existe também a possibilidade de utilizar-se emuladores de android para os SO Windows, Linux e MacOs. Alguns exemplos são: BlueStacks e Genymotion.
+
+Link de Dowload BlueStacks: https://www.bluestacks.com/download.html
 
 Ao armazenar o .apk na memória do dispositivo ou no emulador, é só executá-lo em um gerenciador de arquivos que o aplicativo será instalado automaticamente.
 Recomenda-se a utilização da versão 7.0 ou superior do android para a execução do aplicativo.
