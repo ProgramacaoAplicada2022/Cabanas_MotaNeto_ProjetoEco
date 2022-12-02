@@ -78,7 +78,7 @@ Na Teoria,temos gifs para cada opção de tela teórica:
 
 <img src="https://user-images.githubusercontent.com/115590469/205399195-b1fbe81c-1a67-402a-b048-b12d60e9f501.jpeg" width="250px"/>
 
-A tela de Lampada vs Led:
+A tela de Incadescentes vs Led:
 
 <img src="https://user-images.githubusercontent.com/115590469/205399475-1e180295-d843-4625-ba26-60f6029578ee.jpeg" width="220px"/>
 
