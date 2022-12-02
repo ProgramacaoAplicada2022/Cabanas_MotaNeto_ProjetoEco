@@ -17,11 +17,27 @@ O Projeto Eco é o codinome para um projeto de aplicação pensada no consumo de
 - Ensinar sobre economia de energia
 
 ### Tutorial:
-Para a execução do aplicativo em um dispositivo android basta realizar o download do arquivo .apk.
-A instalação deve ser autorizada nas configurações do dispositivo e assim que executada o aplicativo estará em condições de uso.
-É recomendado o acesso a internet no dispositivo para que se possa acessar o banco de dados e logar no aplicativo.
 
-###Esboço:
+#### Para testar apenas o aplicativo:
+
+Para a simples execução aplicativo em um dispositivo android basta realizar o download do arquivo .apk.
+A instalação deve ser autorizada nas configurações do dispositivo e assim que executada o aplicativo estará em condições de uso.
+Existe também a possibilidade de utilizar-se emuladores de android para os SO Windows, Linux e MacOs. Alguns exemplos são: BlueStacks e Genymotion.
+
+Ao armazenar o .apk na memória do dispositivo ou no emulador, é só executá-lo em um gerenciador de arquivos que o aplicativo será instalado automaticamente.
+Recomenda-se a utilização da versão 7.0 ou superior do android para a execução do aplicativo.
+
+#### Utilizando o Android Studio:
+
+Para visualização completa do código e dos arquivos bases do programa deve-se utilizar o android studio. 
+Após executar a instalação do programa, deve-se realizar o download do diretório \Projeto_Eco completo e em seguida, abrí-lo no no AS.
+Buildar o código e verificar a existência de incopatibilidades no gradle. Caso haja, sanar seguindo as indicações do própio programa.
+Após isso, deve ser executado em um aparelho virtual (Os Google Pixels são os melhores) de escolha do usuário.   
+
+   
+
+
+### Esboço:
 O esboço do projeto foi feito totalmente pela plataforma Android Studio,preparando o layout para a versão funcional do todo.
 A partir da exibição das telas,teremos como identificar o funcionamento do nosso aplicativo.
 
