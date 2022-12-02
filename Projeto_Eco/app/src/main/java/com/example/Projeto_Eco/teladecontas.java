@@ -21,11 +21,8 @@ import com.example.Projeto_Eco.Conta.Conta;
 import com.example.Projeto_Eco.Adapter.ListaContasAdapter;
 
 public class teladecontas extends AppCompatActivity {
-    private Button botaocalculadora;
-    private Button botaovoltar2;
     private Button botaovoltar3;
     private final ContaDAO dao = new ContaDAO();
-    private double ValordaConta;
     private ListaContasAdapter adapter;
 
     @Override
@@ -36,15 +33,8 @@ public class teladecontas extends AppCompatActivity {
 
         configuraListaContas();
 
-        botaocalculadora = findViewById(R.id.botaocalculadora);
-        botaocalculadora.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openteladecalculos();
-            }
-        });
-        botaovoltar2= findViewById(R.id.botaovoltar5);
-        botaocalculadora.setOnClickListener(new View.OnClickListener() {
+        Button botaovoltar5 = findViewById(R.id.botaovoltar5);
+        botaovoltar5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openteladeselecoes();
