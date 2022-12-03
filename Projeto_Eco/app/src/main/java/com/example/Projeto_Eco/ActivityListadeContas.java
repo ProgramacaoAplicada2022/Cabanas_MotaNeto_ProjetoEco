@@ -45,7 +45,6 @@ public class ActivityListadeContas extends AppCompatActivity{
         return super.onContextItemSelected(item);
     }
 
-    //Mudar para adicionar conta
     public void openteladecalculos(){
         Intent intent = new Intent(this,telacalculos.class);
         startActivity(intent);

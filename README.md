@@ -27,10 +27,23 @@ Link de Dowload BlueStacks: https://www.bluestacks.com/download.html
 Ao armazenar o .apk na memória do dispositivo ou no emulador, é só executá-lo em um gerenciador de arquivos que o aplicativo será instalado automaticamente.
 Recomenda-se a utilização da versão 7.0 ou superior do android para a execução do aplicativo.
 
+#### Sequência de passos após instalar o Bluestacks para simples execução do aplicativo no Windows:
+Após instalar o Bluestacks, abra o gerenciador de arquivos:
+<img src ="https://user-images.githubusercontent.com/78933802/205410813-161d5b7a-1085-4405-8253-f50a21c98206.png" width="250px"/>
+
+Importe o arquivo .apk após realizar o download para sua máquina:
+<img src ="https://user-images.githubusercontent.com/78933802/205410854-c172c215-fe6a-43c9-bdc5-ac5b8478b811.png" width="250px"/>
+
+Instale-o na máquina virtual e abra a aplicação: (Poderá haver pequenas incorreções na execução do layout do aplicativo por conta da variação
+de ambiente para ambiente virtual.)
+<img src="https://user-images.githubusercontent.com/78933802/205410870-d674c5d6-4b3d-4b80-a55a-794e4671722f.png" width="250px"/>
+
+
+
 #### Utilizando o Android Studio:
 
 Para visualização completa do código e dos arquivos bases do programa deve-se utilizar o android studio. 
-Após executar a instalação do programa, deve-se realizar o download do diretório \Projeto_Eco completo e em seguida, abrí-lo no no AS.
+Após executar a instalação do programa, deve-se realizar o download do diretório \Projeto_Eco completo e em seguida, abrí-lo no AS.
 Buildar o código e verificar a existência de incopatibilidades no gradle. Caso haja, sanar seguindo as indicações do própio programa.
 Após isso, deve ser executado em um aparelho virtual (Os Google Pixels são os melhores) de escolha do usuário.   
 
