@@ -29,13 +29,16 @@ Recomenda-se a utilização da versão 7.0 ou superior do android para a execuç
 
 #### Sequência de passos após instalar o Bluestacks para simples execução do aplicativo no Windows:
 Após instalar o Bluestacks, abra o gerenciador de arquivos:
+
 <img src ="https://user-images.githubusercontent.com/78933802/205410813-161d5b7a-1085-4405-8253-f50a21c98206.png" width="250px"/>
 
 Importe o arquivo .apk após realizar o download para sua máquina:
+
 <img src ="https://user-images.githubusercontent.com/78933802/205410854-c172c215-fe6a-43c9-bdc5-ac5b8478b811.png" width="250px"/>
 
 Instale-o na máquina virtual e abra a aplicação: (Poderá haver pequenas incorreções na execução do layout do aplicativo por conta da variação
 de ambiente para ambiente virtual.)
+
 <img src="https://user-images.githubusercontent.com/78933802/205410870-d674c5d6-4b3d-4b80-a55a-794e4671722f.png" width="250px"/>
 
 
